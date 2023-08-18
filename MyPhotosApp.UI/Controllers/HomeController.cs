@@ -15,11 +15,13 @@ namespace MyPhotosApp.UI.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Login()
         {
+
             return View();
         }
 

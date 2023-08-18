@@ -1,0 +1,11 @@
+﻿@model DisplayDTO
+<div class="container">
+    <h3 class="text-center">@Model.Description</h3>
+    <h5 class="text-center text-secondary fst-italic">Tags: @Model.Tags</h5>
+    <div class="text-center">
+        <img src="data:image/jpg;base64,@Model.Base64String" style="width:50% ; height:50%; object-fit:fill" class="border border-primary" />
+    </div>
+    <div class="text-center mt-2">
+        <a href="@Url.Action("Delete", "Photo", new { id = Model.Id })" class="btn btn-danger">Delete</a>
+    </div>
+</div>

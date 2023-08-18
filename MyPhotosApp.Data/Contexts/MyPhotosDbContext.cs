@@ -17,6 +17,5 @@ namespace MyPhotosApp.Data.Contexts
 
         public DbSet<User> Users { get; set; }
         public DbSet<Photo> Photos { get; set; }
-        public DbSet<Category>  Categories { get; set; } 
     }
 }
